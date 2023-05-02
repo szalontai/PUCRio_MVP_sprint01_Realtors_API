@@ -1,5 +1,3 @@
-# PUCRio_MVP_sprint01_Realtors_API
-
 # API - Realtors
 
 Este pequeno projeto faz parte do material diático da Disciplina **Desenvolvimento Full Stack Básico** 
@@ -11,6 +9,8 @@ Nós sabemos que o dia dia de um corretor não é fácil. Muitas vezes  entre um
 Por isso foi criado este site, onde ele pode organizar de forma lógica todos imóves de sua carteira.Começando pela a imobiliária do imóvel, passando pelo cadastro de cada comôdo individualmente e finalmente o cadastro das fotos por cada comôdo.
 
 Desta forma, ele consegue visualizar de forma simples, direta e organizada os imóveis.
+
+Aqui temos as instruções para instalar e executar o Back-end do projeto
 
 ---
 ## Como executar 
