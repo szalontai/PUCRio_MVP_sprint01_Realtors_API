@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Projeto - Realtors</title>
+
+</head>
+
+<body>
+    <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title_header">
+            <h2>Realtors</h2>
+        </div>
+        <div class="banner">
+            <img src="https://images.skyscrapercenter.com/uploads/S%C3%A3o-Paulo_-2014_Public-Domain-joelfotos210103-020105.jpg" alt="y">
+        </div>
+    </header>
+
+    <!-- Linha em branco -->
+    <section class="title_section">
+        <div class="title_div">
+            <h2></h2>
+        </div>
+    </section>
+
+    <!-- Tratamento do tipo de imóvel -->
+    <section class="title_section">
+
+        <div class="title_div">
+            <h2>Tipos de Imóveis</h2>
+        </div>
+
+        <!-- Opções para adicionar um novo tipo de imóvel -->
+        <section class="newItem_tipo">
+            <input type="text" id="tipoImovelNewDescription" placeholder="Descrição:">
+            <span onclick="newTipo('tipoImovelNewDescription','tipos_imoveis','tipo_imovel')" class="addBtn">Adicionar</span>
+        </section>
+
+        <!-- Tabela com tipos de imóveis existentes -->
+        <section class="items_tipo">
+            <table id="tipo_imovel">
+                <tr style="background-color:rgb(91, 152, 209)">
+                    <th>Id</th>
+                    <th>Descrição</th>
+                    <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                </tr>
+            </table>
+        </section>
+    </section>
+
+    <!-- Tratamento do tipo de cômodo -->
+    <section class="title_section">
+
+        <div class="title_div">
+            <h2>Tipos de cômodos</h2>
+        </div>
+        <section class="newItem_tipo">
+            <input type="text" id="tipoComodoNewDescription" placeholder="Descrição:">
+            <!-- <span onclick="newTipo('tipoComodoNewDescription','tipos_comodos','tipo_comodo')" class="addBtn">Adicionar</span>
+             -->
+            <span onclick="newTipo('tipoComodoNewDescription','tipos_comodos', 'tipo_comodo')" class="addBtn">Adicionar</span>
+        </section>
+
+        <!-- Tabela com items existentes -->
+        <section class="items_tipo">
+            <table id="tipo_comodo">
+                <tr style="background-color:rgb(91, 152, 209)">
+                    <th>Id</th>
+                    <th>Descrição</th>
+                    <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                </tr>
+            </table>
+        </section>
+
+    </section>
+
+    <!-- Tratamento da imobiliária -->
+    <section class="title_section">
+        <fieldset id = "fieldsetImobiliaria">
+
+            <legend class="title_imb" ><h1><b> Imobiliárias </b></h1></legend>
+            <div>
+                <span onclick="formImobiliaria('O')" 
+                        class="addBtn" 
+                        id = "btnOpenFormImobiliaria">Incluir Imobiliária </span>     
+            </div>
+            <br>
+
+            <form id = "formImobiliaria" >
+                <div class=""> 
+                    <div>
+                        <span>Nome:</span>
+                        <input type="text" id="imobiliariaNewNome" >
+                    </div>
+                    <div>
+                        <span>Razão Social:</span>
+                        <input type="text" id="imobiliariaNewRazaoSocial" >
+                    </div>
+                    <div>
+                        <span>CNPJ:</span>
+                        <input type="text" id="imobiliariaNewCNPJ" >
+                    </div>
+                    <div>
+                        <span>I. E.:</span>
+                        <input type="text" id="imobiliariaNewIE" placeholder="">
+                    </div>
+                    <div>
+                        <span>Endereço:</span>
+                        <input type="text" id="imobiliariaNewEndereco" placeholder="">
+                    </div>
+                    <div>
+                        <span>Complemento:</span>
+                        <input type="text" id="imobiliariaNewComplemento" placeholder="">
+                    </div>
+                    <div>
+                        <span>Bairro:</span>
+                        <input type="text" id="imobiliariaNewBairro" placeholder="">
+                    </div>
+                    <div>
+                        <span>Cidade:</span>
+                        <input type="text" id="imobiliariaNewCidade" placeholder="">
+                    </div>
+                    <div>
+                        <span>UF:</span>
+                        <input type="text" id="imobiliariaNewUF" placeholder="">
+                    </div>
+                    <div>
+                        <span>CEP:</span>
+                        <input type="text" id="imobiliariaNewCEP" placeholder="">
+                    </div>
+                    <div>
+                        <span>DDD:</span>
+                        <input type="text" id="imobiliariaNewDDD" placeholder="">
+                    </div>
+                    <div>
+                        <span>Telefone:</span>
+                        <input type="text" id="imobiliariaNewTelefone" placeholder="">
+                    </div>
+
+                    <div>Matriz:
+                        <select id="imobiliariaNewMatriz"> 
+                        </select>   
+                    </div>
+                    <div id="imobiliariaNewMatrizId">   
+                    </div> 
+
+                    <br>
+                    <span onclick="newImobiliaria('imobiliarias','imobiliaria')" class="addBtn">Adicionar</span>
+                    <span onclick="formImobiliaria('C')" class="addBtn">Cancelar </span>     
+         
+                    <br><br><br>
+                </div>
+            </form>
+
+            <!-- Tabela com items existentes -->
+            <section class="items_tipo">
+                <table id="imobiliaria"  style="width:100%">
+                    <tr style="background-color:rgb(91, 152, 209)">
+                        <th style="width:2%"  >Id</th> 
+                        <th style="width:2%"  ></th>
+                        <th style="width:10%"  >Nome</th>
+                        <th style="width:14%"  >Razão Social</th>
+                        <th style="width:11%"  >CNPJ</th>
+                        <th style="width:5%"  >I. E.</th>
+                        <th style="width:15%"  >Endereço</th>
+                        <th style="width:5%"  >Complemento</th>
+                        <th style="width:5%"  >Bairro</th>
+                        <th style="width:7%"  >Cidade</th>
+                        <th style="width:2%"  >UF</th>
+                        <th style="width:7%"  >CEP</th>
+                        <th style="width:1%"  >DDD</th>
+                        <th style="width:8%"  >Telefone</th>
+                        <th style="width:8%"  >Matriz</th>
+                        <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                    </tr>
+                </table>
+            </section>
+
+        </fieldset>
+    </section>
+
+    <!-- Tratamento do imóvel -->
+    <section class="title_section">
+        <fieldset id = "fieldsetImovel">
+            <legend class="title_imb" ><h1><b> Imóveis </b></h1></legend>
+            <div>
+                <span onclick="formImovel('O')" 
+                        class="addBtn" 
+                        id = "btnOpenFormImovel">Incluir Imóvel </span>     
+            </div>
+            <br>
+            
+            <form id = "formImovel">
+                <div class=""> 
+                <!-- <div class="title_imb">  -->
+
+                    <div  class="dropdown">Imobiliária:
+                        <select id="imovelNewImobiliaria"> 
+                        </select>   
+                    </div>
+                    <div id="imovelNewImobiliariaId">   
+                    </div>  
+
+                    <div>
+                        <label for="fname">Nome :</label>
+                        <input type="text" id="imovelNewNome" >
+                    </div>
+                    <div>
+                        <label for="fname">Endereço:</label>
+                        <input type="text" id="imovelNewEndereco" placeholder="">
+                    </div>
+                    <div>
+                        <label for="fname">Complemento:</label>
+                        <input type="text" id="imovelNewComplemento" placeholder="">
+                    </div>
+                    <div>
+                        <span>Bairro:</span>
+                        <input type="text" id="imovelNewBairro" placeholder="">
+                    </div>
+                    <div>
+                        <span>Cidade:</span>
+                        <input type="text" id="imovelNewCidade" placeholder="">
+                    </div>
+                    <div>
+                        <span>UF:</span>
+                        <input type="text" id="imovelNewUF" placeholder="">
+                    </div>
+                    <div>
+                        <span>CEP:</span>
+                        <input type="text" id="imovelNewCEP" placeholder="">
+                    </div>
+                    <div>
+                        <span>DDD:</span>
+                        <input type="text" id="imovelNewDDD" placeholder="">
+                    </div>
+                    <div>
+                        <span>Telefone:</span>
+                        <input type="text" id="imovelNewTelefone" placeholder="">
+                    </div>
+                    <div>    
+                        <span>Descrição:</span><br>
+                            <textarea id="imovelNewDescricao" rows="10" cols="90" ></textarea>                      
+                    </div>                        
+                    
+                    <div  class="dropdown">Tipo do imóvel:
+                        <select id="imovelNewTipoImovel"> 
+                        </select>   
+                    </div>
+                    <div id="imovelNewTipoImovelId">   
+                    </div>  
+
+                    <br>
+                    <span onclick="newImovel('imoveis','imovel')" class="addBtn">Adicionar</span>
+                    <span onclick="formImovel('C')" class="addBtn" >Cancelar </span>     
+
+                    <br><br><br>                
+                </div>
+            </form>
+        
+            <!-- Tabela com items existentes -->
+            <section class="items_tipo">
+                <table id="imovel" style="width:100%">
+                    <tr style="background-color:rgb(91, 152, 209)">
+                        <th style="width:2%"  >Id</th>
+                        <th style="width:2%"  ></th>
+                        <th style="width:24%" >Imobiliária</th>
+                        <th style="width:24%" >Nome</th>
+                        <th style="width:24%" >Endereço</th>
+                        <th style="width:10%" >Complemento</th>
+                        <th style="width:5%"  >Bairro</th>
+                        <th style="width:7%"  >Cidade</th>
+                        <th style="width:2%"  >UF</th>
+                        <th style="width:7%"  >CEP</th>
+                        <th style="width:1%"  >DDD</th>
+                        <th style="width:8%"  >Telefone</th>
+                        <th style="width:5%"  >Descrição</th>
+                        <th style="width:5%"  >Imóvel</th>
+                        <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                    </tr>
+                </table>
+            </section>
+        </fieldset>
+    </section>
+        
+    <!-- Tratamento do cômodo -->
+    <section class="title_section">
+        <fieldset id = "fieldsetComodo">
+            <legend class="title_imb" ><h1><b> Cômodos </b></h1></legend>
+            <div>
+                <span onclick="formComodo('O')" 
+                        class="addBtn" 
+                        id = "btnOpenFormComodo">Incluir Cômodo </span>     
+            </div>
+            <br>
+
+            <form id = "formComodo">
+                <div class=""> 
+                <!-- <div class="title_imb">  -->
+
+                    <div>Imóvel:
+                        <select id="comodoNewImovel"> 
+                        </select>   
+                    </div>
+                    <div id="comodoNewImovelId">   
+                    </div>  
+
+                    <div>Tipo do cômodo:
+                        <select id="comodoNewTipoComodo"> 
+                        </select>   
+                    </div>
+                    <div id="comodoNewTipoComodoId">   
+                    </div>  
+
+                    <div>
+                        <label for="fname">Nome :</label>
+                        <input type="text" id="comodoNewNome" >
+                    </div>
+                    <div>
+                        <label for="fname">Quantidade:</label>
+                        <input type="text" id="comodoNewQuantidade" placeholder="">
+                    </div>
+                    <div>    
+                        <span>Descrição:</span><br>
+                            <textarea id="comodoNewDescricao" rows="10" cols="90" ></textarea>                      
+                    </div>                        
+                    
+                    <br>
+                    <span onclick="newComodo('comodos','comodo')" class="addBtn">Adicionar</span>
+                    <span onclick="formComodo('C')" class="addBtn">Cancelar </span>     
+   
+                    <br><br><br>                
+                </div>
+            </form>
+        
+            <!-- Tabela com items existentes -->
+            <section class="items_tipo">
+                <table id="comodo" style="width:100%">
+                    <tr style="background-color:rgb(91, 152, 209)">
+                        <th style="width:2%"  >Id</th>
+                        <th style="width:2%"  ></th>
+                        <th style="width:18%" >Imóvel</th>
+                        <th style="width:35%" >Nome</th>
+                        <th style="width:5%"  >Quantidade</th>
+                        <th style="width:28%" >Descrição</th>
+                        <th style="width:10%" >Cômodo</th>
+                        <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                    </tr>
+                </table>
+            </section>
+        </fieldset>
+    </section>
+
+    <!-- Tratamento das imagens do cômodo -->
+    <section class="title_section">
+        <fieldset id = "fieldsetImagem">
+            <legend class="title_imb" ><h1><b> Imagens dos Cômodos </b></h1></legend>
+            <div>
+                <span onclick="formImagem('O')" 
+                        class="addBtn" 
+                        id = "btnOpenFormImagem">Incluir Imagem do Cômodo </span>     
+            </div>
+            <br>
+
+            <section class="">
+                <div class=""> 
+
+                    <form id="formImagem">
+                
+                        <div>
+                            <span>Cômodo :</span>
+                            <select id="imagemNewComodo"></select>   
+                            <input type="hidden" id="imagemNewComodoId" name="id_comodo" ></input>  
+                        </div>
+
+                        <div>        
+                            <label for="fname">Imagem :</label>                        
+                            <input type="file" name="imagem" id="image">
+                        </div>
+                        <div>    
+                            <span>Descrição:</span><br>                            
+                            <textarea id="imagemNewDescricao" rows="10" cols="90" name="descricao" ></textarea>                      
+                        </div>    
+                        <br>
+                        <span   onclick="newImagem()"  class="addBtn">Adicionar</span>
+                        <span  onclick="formImagem('C')" class="addBtn">Cancelar </span>     
+                        <br><br><br> 
+                    </form>
+
+                </div>
+            </section>
+
+            <!-- Tabela com items existentes -->
+            <section class="items_tipo">
+                <table id="imagem" style="width:100%">
+                    <tr style="background-color:rgb(91, 152, 209)">
+                        <th style="width:2%"  >Id</th>
+                        <th style="width:40%" >Imagem</th>
+                        <th style="width:18%" >Comodo</th>
+                        <th style="width:40%" >Descrição</th>
+                        <th style="width:2%">
+                            <img    src="https://cdn-icons-png.flaticon.com/512/126/126468.png" 
+                                    width="15px" height="15px">
+                        </th>
+                    </tr>
+                </table>
+            </section>
+        </fieldset>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

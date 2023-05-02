@@ -1,0 +1,253 @@
+body,
+ul,
+li {
+    font-family: tahoma;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(153, 223, 255);
+}
+
+header {
+    background-color: rgb(153, 223, 255);
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.title_header {
+    color: rgb(8, 1, 1);
+    width: 100%;
+    background-color: rgb(91, 152, 209);
+    display: inline-block;
+    padding: 2px 0px;
+    position: sticky;
+    top: 0px;
+}
+
+
+
+.title_section {
+    margin: 0;
+    padding: 110;
+    border: 1px solid rgb(35, 32, 24);
+
+}
+
+.title_div {
+    color: rgb(8, 1, 1);
+    width: 100%;
+    display: inline-block;
+    padding: 2px 0px;
+    /* position: sticky; */
+    top: 0px;
+    text-align: center;
+}
+
+.title_imb {
+    color: rgb(8, 1, 1);
+    width: 100%;
+    padding: 2px 0px;
+    /* position: sticky; */
+    top: 0px;
+    text-align: center;
+   
+}
+
+
+.banner {
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner img {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+
+.newItem_tipo {
+    background-color: rgb(153, 223, 255);
+    padding: 30px 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.newItem_tipo_imovel:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#newInput {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 25%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+/* #imobiliariaNewNome {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 25%;
+    padding: 10px;
+    font-size: 1px;
+} */
+
+
+
+#newQuantity {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 8%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#newPrice {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 5%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#newComment {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 25%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+.addBtn {
+    padding: 9px 10px;
+    background-color: rgb(35, 32, 24);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.selectimovel {
+    cursor: pointer;
+}
+
+.selectcomodo {
+    cursor: pointer;
+}
+
+.addBtn:hover {
+    background-color: #2ab53a;
+    color: white;
+}
+
+.item_tipo_imovel {
+    margin: 0;
+    padding: 110;
+    border: 1px solid rgb(35, 32, 24);
+
+}
+
+
+.items_tipo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.itemsComm {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.close:hover {
+    color: #f44336;
+    font-weight: bolder;
+}
+
+tipo_imovel,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 10px;
+    font-size: 12px;
+    transition: 0.1s;
+    text-align: start;
+}
+
+tipo_imovel{
+    background-color: white;
+    width: 50%;
+}
+
+tr:nth-child(odd){
+    background-color: #eee;
+}
+
+th:nth-child(1){
+    width: 10%;
+}
+
+tr:hover {
+    background: rgb(47, 132, 212);
+    /* background: rgb(200, 199, 199); */
+}
+
+/* Dropdown Button */
+/* .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+   */
+  /* Dropdown button on hover & focus */
+/*   .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+   */
+  /* The container <div> - needed to position the dropdown content */
+/*   .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+   */
+  /* Dropdown Content (Hidden by Default) */
+/*   .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+   */
+  /* Links inside the dropdown */
+/*   .dropdown-content option {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+   */
+  /* Change color of dropdown links on hover */
+/*   .dropdown-content option:hover {background-color: #ddd;}
+   */
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/*   .show {display:block;} */
