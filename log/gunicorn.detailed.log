@@ -1,0 +1,34 @@
+[2023-03-19 11:50:50,538] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.20:5000 (Press CTRL+C to quit) - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:50:50,558] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:50:57,304] INFO _log() L224  127.0.0.1 - - [19/Mar/2023 11:50:57] "POST /produto HTTP/1.1" 200 - - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:51:11,469] INFO _log() L224  127.0.0.1 - - [19/Mar/2023 11:51:11] "GET /openapi/rapidoc HTTP/1.1" 200 - - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:51:11,914] INFO _log() L224  127.0.0.1 - - [19/Mar/2023 11:51:11] "[36mGET /openapi/static/js/rapidoc-min.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:51:12,292] INFO _log() L224  127.0.0.1 - - [19/Mar/2023 11:51:12] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:51:12,324] INFO _log() L224  127.0.0.1 - - [19/Mar/2023 11:51:12] "[36mGET /openapi/static/images/rapidoc.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:51:27,647] WARNING del_produto() L150  Erro ao deletar produto #'bala', Produto não encontrado na base :/ - call_trace=C:\Users\marcelo.szalontai\OneDrive\Puc-RJ\Sprint 1 Desenvolvimento Full Stack Básico\Desenvolvimento Full Stack Básico\aula-3\meu_app_api\app.py L150 
+[2023-03-19 11:51:27,649] INFO _log() L224  127.0.0.1 - - [19/Mar/2023 11:51:27] "[33mDELETE /produto?nome=bala HTTP/1.1[0m" 404 - - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:51:35,864] WARNING del_produto() L150  Erro ao deletar produto #'Bala', Produto não encontrado na base :/ - call_trace=C:\Users\marcelo.szalontai\OneDrive\Puc-RJ\Sprint 1 Desenvolvimento Full Stack Básico\Desenvolvimento Full Stack Básico\aula-3\meu_app_api\app.py L150 
+[2023-03-19 11:51:35,865] INFO _log() L224  127.0.0.1 - - [19/Mar/2023 11:51:35] "[33mDELETE /produto?nome=Bala HTTP/1.1[0m" 404 - - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:51:52,479] INFO _log() L224  127.0.0.1 - - [19/Mar/2023 11:51:52] "DELETE /produto?nome=BALA HTTP/1.1" 200 - - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:53:02,179] INFO _log() L224   * Detected change in 'C:\\Users\\marcelo.szalontai\\OneDrive\\Puc-RJ\\Sprint 1 Desenvolvimento Full Stack Básico\\Desenvolvimento Full Stack Básico\\aula-3\\meu_app_api\\model\\produto.py', reloading - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:53:02,284] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:53:14,116] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.20:5000 (Press CTRL+C to quit) - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:53:14,121] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:53:31,508] INFO _log() L224  127.0.0.1 - - [19/Mar/2023 11:53:31] "POST /produto HTTP/1.1" 200 - - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:57:55,268] WARNING add_produto() L68   Erro ao adicionar produto 'bala', Produto de mesmo nome já salvo na base :/ - call_trace=C:\Users\marcelo.szalontai\OneDrive\Puc-RJ\Sprint 1 Desenvolvimento Full Stack Básico\Desenvolvimento Full Stack Básico\aula-3\meu_app_api\app.py L68  
+[2023-03-19 11:57:55,295] INFO _log() L224  127.0.0.1 - - [19/Mar/2023 11:57:55] "[31m[1mPOST /produto HTTP/1.1[0m" 409 - - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:58:10,480] INFO _log() L224  127.0.0.1 - - [19/Mar/2023 11:58:10] "POST /produto HTTP/1.1" 200 - - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:59:15,522] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.20:5000 (Press CTRL+C to quit) - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:59:15,540] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:59:17,857] INFO _log() L224  127.0.0.1 - - [19/Mar/2023 11:59:17] "DELETE /produto?nome=bala+II HTTP/1.1" 200 - - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:59:22,797] INFO _log() L224  127.0.0.1 - - [19/Mar/2023 11:59:22] "DELETE /produto?nome=bala HTTP/1.1" 200 - - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-03-19 11:59:36,785] INFO _log() L224  127.0.0.1 - - [19/Mar/2023 11:59:36] "POST /produto HTTP/1.1" 200 - - call_trace=C:\Users\marcelo.szalontai\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
